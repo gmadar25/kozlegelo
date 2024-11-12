@@ -1,5 +1,6 @@
 /* Import the Bungee Shade font */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -143,6 +144,13 @@ body {
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    body {
+      font-family:'Montserrat';
+    }
+    .header-title {
+      font-family:"Bungee Shade";
+    }
+    
     .header-top {
         flex-direction: column;
         gap: 10px;
