@@ -1,0 +1,162 @@
+/* Import the Bungee Shade font */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'MV Boli', cursive;
+    color: #405e49;
+}
+
+/* Header Styling */
+.header {
+    background-color: #405e49;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding:0 20px 0 20px;
+    position:fixed;
+    background-color: #405e49;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+    margin-top:-5px;
+}
+
+.header-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-family: "Bungee Shade";
+    margin-top:40px;
+    padding-top:20px;
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* Main content styling */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 30px 50px 0; /* Adjust if your header overlaps */
+}
+
+/* Article styling */
+.article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Image styling */
+.article img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Title styling */
+.article h2 {
+    font-size: 1.5em;
+    margin: 15px 0 10px;
+    color: #333333;
+}
+
+/* Subtitle styling */
+.article p {
+    font-size: 1em;
+    color: #666666;
+    margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #e1d6ca;
+    color: #405e49;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px 40px 20px;
+    text-align: center;
+    flex-direction: row;
+}
+
+.footer-logo {
+    width: 8%;
+    height: auto;
+    margin-left:30%;
+    align-self: flex-start;
+}
+
+.footer-content {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content a {
+    color: #405e49;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-nav {
+        gap: 10px;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .footer-content {
+        font-size: 0.9rem;
+    }
+}
