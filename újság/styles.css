@@ -1,7 +1,6 @@
-/* Import the Bungee Shade font */
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -68,7 +67,7 @@ body {
 /* Main content styling */
 .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(35%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 20px;
     padding: 20px;
     margin: 30px 50px 0; /* Adjust if your header overlaps */
@@ -150,14 +149,20 @@ body {
     .header-title {
       font-family:"Bungee Shade";
     }
-    
     .header-top {
         flex-direction: column;
         gap: 10px;
     }
-
+    .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(60%, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 30px 20px 0; /* Adjust if your header overlaps */
+    }
     .header-nav {
         gap: 10px;
+        font-size: 0.8rem;
     }
 
     .header-title {
@@ -166,5 +171,11 @@ body {
 
     .footer-content {
         font-size: 0.9rem;
+    }
+    .footer-logo {
+        width: 20%;
+        height: auto;
+        margin-left:30%;
+        align-self: flex-start;
     }
 }
