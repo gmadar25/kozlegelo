@@ -11,19 +11,21 @@
 </head>
 <body>
   <header class="header">
-    <div class="hamburger-menu" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
+    <div class="header-top">
+        <a href="ujsag.html"><img src="logofeher_nobg2.png" alt="Logo" class="logo"></a>
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="gazdasag.html">Gazdaság</a>
+            <a href="#conference">Közélet</a>
+            <a href="#articles">Riportok</a>
+            <a href="kuldetesunk.html">Küldetésünk</a>
+            <a href="szerzoink.html">Szerzőink</a>
+        </nav>
     </div>
-      <div class="header-top">
-          <a href="ujsag.html"><img src="logofeher_nobg2.png" alt="Logo" class="logo"></a>
-          <nav class="header-nav">
-              <a href="gazdasag.html">Gazdaság</a>
-              <a href="#conference">Közélet</a>
-              <a href="#articles">Riportok</a>
-              <a href="kuldetesunk.html">Küldetésünk</a>
-              <a href="szerzoink.html">Szerzőink</a>
-          </nav>
-      </div>
       <a href=ujsag.html><h1 class="header-title">Közlegelő</h1></a>
   </header>
 
@@ -93,10 +95,10 @@
     <img src="logofeher_nobg2.png" alt="Logo" class="footer-logo">
 </footer>
 <script>
-function toggleMenu() {
+document.querySelector('.hamburger-menu').addEventListener('click', () => {
     const nav = document.querySelector('.header-nav');
     nav.classList.toggle('active');
-}
+});
 </script>
 </body>
 </html>
