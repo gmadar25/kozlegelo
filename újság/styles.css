@@ -171,8 +171,13 @@ a {
     }
 
     .header-nav.active {
-        display: flex; /* Show nav links when toggled */
+        display: flex !important; /* Ensure it overrides display: none */
+        flex-direction: column; /* Stack items for mobile */
+        gap: 10px;
+        background-color: #405e49; /* Optional: Add background for clarity */
+        padding: 10px; /* Optional: Space around links */
     }
+
 
     body {
       font-family:'Montserrat';
@@ -191,14 +196,6 @@ a {
         height: auto;
     }
 
-/*    .header-nav {
-        display: flex;
-        gap: 10px;
-        margin-top:-5px;
-        flex-direction: column;
-        align-items: center;
-    }
-*/
     .header-nav a {
         font-size: 0.9rem; /* Adjust text size for smaller screens */
         padding: 5px 0;
