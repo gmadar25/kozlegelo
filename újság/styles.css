@@ -28,9 +28,21 @@ a {
 }
 .hamburger-menu {
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    background: transparent;
+    border: none;
     cursor: pointer;
-    font-size: 1.5rem;
-    color: white;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
 }
 .header-top {
     display: flex;
@@ -161,24 +173,24 @@ a {
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .hamburger-menu {
-        display: block; /* Show hamburger menu */
-        align: center;
-    }
-
+        display: flex;
+      }
     .header-nav {
         display: none; /* Initially hide nav links */
         flex-direction: column;
         gap: 10px;
+        background-color: #405e49;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
     }
 
-    .header-nav.active {
-        display: flex !important; /* Ensure it overrides display: none */
-        flex-direction: column; /* Stack items for mobile */
-        gap: 10px;
-        background-color: #405e49; /* Optional: Add background for clarity */
-        padding: 10px; /* Optional: Space around links */
+      .header-nav.active {
+            display: flex; /* Show menu when active */
+        }
     }
-
 
     body {
       font-family:'Montserrat';
