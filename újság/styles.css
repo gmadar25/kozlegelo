@@ -201,7 +201,6 @@ a {
     .header-top {
         /*flex-direction: column;*/
         gap: 10px;
-        margin-left:-20px;
     }
 
     .logo {
