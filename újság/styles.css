@@ -162,6 +162,7 @@ a {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block; /* Show hamburger menu */
+        align: center;
     }
 
     .header-nav {
