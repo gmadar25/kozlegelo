@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Közlegelő</title>
+    <link rel="icon" href="kepek/logofeher.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="szerzoink.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+        <a href="ujsag.html"><img src="kepek/logofeher_nobg2.png" alt="Logo" class="logo"></a>
+        <button class="hamburger-menu" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="header-nav">
+            <a href="gazdasag.html">Gazdaság</a>
+            <a href="kozelet.html">Közélet</a>
+            <a href="velemeny.html">Vélemény</a>
+            <a href="kuldetesunk.html">Küldetésünk</a>
+            <a href="szerzoink.html">Szerzőink</a>
+        </nav>
+    </div>
+      <a href=ujsag.html><h1 class="header-title">Közlegelő</h1></a>
+  </header>
+
+
+  <section class="writers-section">
+      <h2>Szerzőink</h2>
+      <div id="writer1" class="writer">
+          <img src="kepek\ballagas.jpg" alt="Writer's Photo" class="writer-photo">
+          <div class="writer-info">
+              <h3><a href="madargergely.html">Madár Gergely</a></h3>
+              <p><a href="madargergely.html">A legnagyobb istenkirály ki valaha lábát tette e földön. Egyszerűen egy legenda! Szakterülete: az ÉLET.</a></p>
+          </div>
+      </div>
+      <div id="writer2" class="writer">
+          <img src="kepek\peti.jpg" alt="Writer's Photo" class="writer-photo">
+          <div class="writer-info">
+              <h3><a href="schermannpeter.html">Schermann Péter</a></h3>
+              <p><a href="schermannpeter.html"> Kegyetlen kapitalizmuskritika. Magyarország legnagyobb hibájának a rendszerváltást gondolja (van is neki a kommunizmus leheletéből), otthonában pedig Marx képe van felfestve a falra.</a></p>
+          </div>
+      </div>
+      <!-- Add more writers as needed -->
+  </section>
+
+  <!-- <section id="writer-articles" style="display: none; margin-top: 20px;">
+      <h2>Írásai</h2>
+      <ul id="article-list"></ul>
+  </section>-->
+
+
+  <footer class="footer">
+    <div class="footer-content">
+  <p>Elérhetőségeink:</p>
+  <ul>
+    <li><a href="mailto:szerk@kozlegelo.hu"><i class="fas fa-envelope"></i> szerk@kozlegelo.hu</a></li>
+    <li><a href="https://instagram.com/kozlegelo" target="_blank"><i class="fab fa-instagram"></i> @kozlegelo</a></li>
+    <li><a href="https://facebook.com/kozlegelo" target="_blank"><i class="fab fa-facebook"></i> Közlegelő</a></li>
+  </ul></div>
+      <img src="kepek/logofeher_nobg2.png" alt="Logo" class="footer-logo">
+  </footer>
+<script src="hamburger.js"></script>
+</body>
+</html>
+<!--<script>
+    // Sample data: Map of writer IDs to their articles
+    const articles = {
+        writer1: [
+            { title: "Mi lesz veled, Argentína?", url: "argentina.html" },
+            { title: "A modernitás átka", url: "modernitas.html" }
+        ],
+        writer2: [
+            { title: "Egy másik cikk", url: "article2.html" },
+            { title: "Történelmi elemzés", url: "history.html" }
+        ]
+    };
+
+    // Function to show articles for a specific writer
+    function showArticles(writerId) {
+        const writerArticles = articles[writerId];
+        const articleList = document.getElementById("article-list");
+
+        // Clear existing articles
+        articleList.innerHTML = "";
+
+        // Add new articles
+        writerArticles.forEach(article => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML = `<a href="${article.url}">${article.title}</a>`;
+            articleList.appendChild(listItem);
+        });
+
+        // Show the article section
+        document.getElementById("writer-articles").style.display = "block";
+    }
+</script> -->
