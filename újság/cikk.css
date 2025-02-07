@@ -178,4 +178,7 @@
     .related-articles li {
         width: 100%; /* Full width for single-column layout */
     }
+    .article-content p {
+      text-align: left;
+    }
 }
